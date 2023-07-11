@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-def lookup(obj):
-    """ Function that returns the list of available attributes
-        and methods of an object
+# 1-my_list.py
+# reagan
+"""Defines an inherited list class MyList."""
 
-    Args:
-        obj: instance of the class
 
-    Returns:
-        List of attributes
-    """
+class MyList(list):
+    """Implements sorted printing for the built-in list class."""
 
-    return dir(obj)
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
